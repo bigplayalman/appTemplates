@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif!important;
+}
+body.login {
+    background: linear-gradient(90deg, #BAECF0 10%, #D7F0BA 90%);
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container-login{
+        height:100%;
+        display:table;
+        width: 100%;
+        padding: 0;
+    }
+    .login-header{
+        margin-bottom: -50px;
+    }
+    .row-fluid {
+        height: 100%;
+        display:table-cell;
+        vertical-align: middle;
+        padding:0;
+    }
+    .login-box {
+        margin: -250px auto !important;
+    }
+}
+
+.well{
+    background-color:#fff!important;
+    border-radius: 15px!important;
+    border: 2px solid #ccc!important;
+}
+
+.login-box {
+    width:300px;
+    margin: 0px auto;
+    float: none;
+}
+.well.login-box legend {
+    font-size:26px;
+    text-align:center;
+    font-weight:300;
+}
+.well.login-box label {
+    font-weight:300;
+    font-size:16px;
+
+}
+.well.login-box input[type="text"] {
+    box-shadow:none;
+    border-color:#ddd;
+    border-radius:0;
+}
+
+.well.welcome-text{
+    font-size:21px;
+}
+#signupDialog{
+    display: none;
+}
