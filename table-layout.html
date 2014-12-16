@@ -16,7 +16,7 @@
 	<![endif]-->
 
 	<!--Styles for pages. I had them separated so anyone can chose that they want in their app-->
-	<link href="css/tables.css" rel="stylesheet">
+	<link id="local">
 </head>
 <body class="tables">
 <div id="header"></div>
@@ -34,11 +34,26 @@
 		$(element).load(content);
 	}
 	var tableNumber = sessionStorage.getItem('table');
+	loadCss(tableNumber);
 	$(document).ready( function() {
+
 		loadElement('#header', 'content/navigation.html');
 		loadElement('#content', 'content/tables/' + tableNumber + '.html');
 		loadElement('#footer', 'content/footer.html');
 	});
+
+	function loadCss(href) {
+
+		var cssLink = $('#local');
+		$("head").append(cssLink); //IE hack: append before setting href
+
+		cssLink.attr({
+			rel:  "stylesheet",
+			type: "text/css",
+			href: 'css/tables/' + href + '.css'
+		});
+
+	};
 
 </script>
 </body>
