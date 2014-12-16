@@ -7,4 +7,16 @@
         <a class="btn btn-primary btn-lg" href="login-layout.html" role="button" id="loginOne">Sample One</a>
     </p>
     <hr>
+	<h3>Responsive Tables</h3>
+	<p>
+		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-one">Sample One</a>
+	</p>
+	<hr>
 </div>
+<script>
+	$(document).on('click', '.tables', function(e) {
+		var tableId = e.currentTarget.id;
+		sessionStorage.setItem('table', tableId);
+	});
+
+</script>
