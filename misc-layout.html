@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>App Tables</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link id='local'>
+
+	<!--custom js files-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+<body class="tables">
+<div id="header"></div>
+<div id="content"></div>
+<div id="footer"></div>
+
+<script>
+	function loadElement(element, content){
+		$(element).load(content);
+	}
+	var miscNumber = sessionStorage.getItem('misc');
+	loadCss(miscNumber);
+	$(document).ready( function() {
+
+		loadElement('#header', 'content/navigation.html');
+		loadElement('#content', 'content/misc/' + miscNumber + '.html');
+		loadElement('#footer', 'content/footer.html');
+	});
+
+	function loadCss(href) {
+
+		var cssLink = $('#local');
+		$("head").append(cssLink); //IE hack: append before setting href
+
+		cssLink.attr({
+			rel:  "stylesheet",
+			type: "text/css",
+			href: 'css/misc/' + href + '.css'
+		});
+
+	};
+
+</script>
+</body>
+</html>

@@ -4,19 +4,26 @@
     <hr>
     <h3>Login</h3>
     <p>
-        <a class="btn btn-primary btn-lg" href="login-layout.html" role="button" id="loginOne">Sample One</a>
+        <a class="btn btn-primary btn-lg" href="login-layout.html" role="button" id="loginOne">vertically centered</a>
     </p>
     <hr>
 	<h3>Responsive Tables</h3>
 	<p>
-		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-one">Sample One</a>
-		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-two">Sample Two</a>
+		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-one">with divs</a>
+		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-two">using tables</a>
 	</p>
 	<hr>
 	<h3>Buttons</h3>
 	<p>
-		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-one">Sample One</a>
-		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-two">Sample Two</a>
+		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-one">colorful</a>
+		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-two">icon</a>
+		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-three">grouped</a>
+	</p>
+	<hr>
+	<h3>Misc</h3>
+	<p>
+		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-one">box material design</a>
+		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-two">card material design</a>
 	</p>
 	<hr>
 </div>
@@ -28,6 +35,10 @@
 	$(document).on('click', '.buttons', function(e) {
 		var buttonId = e.currentTarget.id;
 		sessionStorage.setItem('buttons', buttonId);
+	});
+	$(document).on('click', '.misc', function(e) {
+		var miscId = e.currentTarget.id;
+		sessionStorage.setItem('misc', miscId);
 	});
 
 </script>
