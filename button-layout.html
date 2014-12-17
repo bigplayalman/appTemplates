@@ -29,12 +29,12 @@
 	function loadElement(element, content){
 		$(element).load(content);
 	}
-	var tableNumber = sessionStorage.getItem('table');
-	loadCss(tableNumber);
+	var buttons = sessionStorage.getItem('buttons');
+	loadCss(buttons);
 	$(document).ready( function() {
 
 		loadElement('#header', 'content/navigation.html');
-		loadElement('#content', 'content/tables/' + tableNumber + '.html');
+		loadElement('#content', 'content/buttons/' + buttons + '.html');
 		loadElement('#footer', 'content/footer.html');
 	});
 
@@ -46,7 +46,7 @@
 		cssLink.attr({
 			rel:  "stylesheet",
 			type: "text/css",
-			href: 'css/tables/' + href + '.css'
+			href: 'css/buttons/' + href + '.css'
 		});
 
 	};

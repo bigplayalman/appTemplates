@@ -13,11 +13,21 @@
 		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-two">Sample Two</a>
 	</p>
 	<hr>
+	<h3>Buttons</h3>
+	<p>
+		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-one">Sample One</a>
+		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-two">Sample Two</a>
+	</p>
+	<hr>
 </div>
 <script>
 	$(document).on('click', '.tables', function(e) {
 		var tableId = e.currentTarget.id;
 		sessionStorage.setItem('table', tableId);
+	});
+	$(document).on('click', '.buttons', function(e) {
+		var buttonId = e.currentTarget.id;
+		sessionStorage.setItem('buttons', buttonId);
 	});
 
 </script>
