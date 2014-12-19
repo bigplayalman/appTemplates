@@ -4,7 +4,8 @@
     <hr>
     <h3>Login</h3>
     <p>
-        <a class="btn btn-primary btn-lg" href="login-layout.html" role="button" id="loginOne">vertically centered</a>
+        <a class="btn btn-primary btn-lg login" href="login-layout.html" role="button" id="login-one">vertically centered</a>
+		<a class="btn btn-primary btn-lg login" href="login-layout.html" role="button" id="login-two">with social login</a>
     </p>
     <hr>
 	<h3>Responsive Tables</h3>
@@ -32,6 +33,10 @@
 	$(document).on('click', '.tables', function(e) {
 		var tableId = e.currentTarget.id;
 		sessionStorage.setItem('table', tableId);
+	});
+	$(document).on('click', '.login', function(e) {
+		var miscId = e.currentTarget.id;
+		sessionStorage.setItem('login', miscId);
 	});
 	$(document).on('click', '.buttons', function(e) {
 		var buttonId = e.currentTarget.id;

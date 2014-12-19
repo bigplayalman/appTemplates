@@ -43,3 +43,31 @@
         </div>
     </div>
 </div>
+<script>
+
+	$(document).ready( function() {
+
+		$(document).on('click', '#register', function(e) {
+			e.preventDefault();
+
+			var $login = $('#loginDialog');
+			var $signup = $('#signupDialog');
+			var $text = $('#register');
+
+			if($login.hasClass('active')) {
+				$signup.show();
+				$signup.addClass('active');
+				$login.hide();
+				$login.removeClass('active');
+				$text.html('Already have an Account?');
+			} else {
+				$login.addClass('active');
+				$login.show();
+				$signup.hide();
+				$signup.removeClass('active');
+				$text.html('Need an Account?');
+			}
+		});
+	});
+
+</script>
