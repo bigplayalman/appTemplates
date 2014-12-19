@@ -14,6 +14,12 @@
 		<a class="btn btn-primary btn-lg tables" href="table-layout.html" role="button" id="table-two">using tables</a>
 	</p>
 	<hr>
+	<h3>Layout Elements</h3>
+	<p>
+		<a class="btn btn-primary btn-lg layout" href="layout-layout.html" role="button" id="layout-one">box material design</a>
+		<a class="btn btn-primary btn-lg layout" href="layout-layout.html" role="button" id="layout-two">card material design</a>
+	</p>
+	<hr>
 	<h3>Buttons</h3>
 	<p>
 		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-one">colorful</a>
@@ -21,11 +27,14 @@
 		<a class="btn btn-primary btn-lg buttons" href="button-layout.html" role="button" id="button-three">grouped</a>
 	</p>
 	<hr>
-	<h3>Misc</h3>
+	<h3>Miscellaneous</h3>
 	<p>
-		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-one">box material design</a>
-		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-two">card material design</a>
+		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-four">event list</a>
+		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-five">Circular tabs</a>
 		<a class="btn btn-primary btn-lg misc" href="misc-layout.html" role="button" id="misc-three">full screen background</a>
+	</p>
+	<p>
+
 	</p>
 	<hr>
 </div>
@@ -45,6 +54,10 @@
 	$(document).on('click', '.misc', function(e) {
 		var miscId = e.currentTarget.id;
 		sessionStorage.setItem('misc', miscId);
+	});
+	$(document).on('click', '.layout', function(e) {
+		var miscId = e.currentTarget.id;
+		sessionStorage.setItem('layout', miscId);
 	});
 
 </script>

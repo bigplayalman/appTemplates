@@ -8,25 +8,30 @@
     <file url="file://$PROJECT_DIR$/content/buttons/button-two.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/footer.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/home.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content/layout/layout-one.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content/layout/layout-two.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/login/login-header.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/login/login-one.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/login/login-two.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/content/misc/misc-one.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content/misc/misc-five.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/content/misc/misc-four.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/misc/misc-three.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/content/misc/misc-two.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/navigation.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/tables/table-one.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/content/tables/table-two.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/buttons/button-one.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/buttons/button-three.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/layout/layout-one.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/layout/layout-two.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/login/login-one.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/login/login-two.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/misc/misc-one.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/misc/misc-five.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/misc/misc-four.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/misc/misc-three.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/css/misc/misc-two.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/tables/table-one.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/css/tables/table-two.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/layout-layout.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/login-layout.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/misc-layout.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/table-layout.html" charset="UTF-8" />
