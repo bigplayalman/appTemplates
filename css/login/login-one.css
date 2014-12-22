@@ -4,7 +4,7 @@ html, body {
     width: 100%;
     font-family: 'Open Sans', sans-serif!important;
 }
-body.login {
+body {
     background: linear-gradient(90deg, #BAECF0 10%, #D7F0BA 90%);
 
 }
